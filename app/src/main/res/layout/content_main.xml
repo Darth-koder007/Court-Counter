@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
     android:orientation="vertical"
     android:paddingTop="50dp">
 
@@ -14,116 +15,127 @@
         android:orientation="horizontal"
         android:paddingBottom="50dp">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/linearLayout"
-        android:layout_marginRight="10dp"
-        android:layout_weight="1">
-
-        <TextView
-            android:id="@+id/teamA"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="Team A"
-            android:textAlignment="center"
-            android:textSize="30sp" />
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/scoreA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="0"
-            android:textSize="50sp"
-            android:textAlignment="center"
-            />
+            <TextView
+                android:id="@+id/teamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Team A"
+                android:textAlignment="center"
+                android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/PlusTwoA"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="2 pointer"
-            android:onClick="PlusTwoPointA" />
+            <TextView
+                android:id="@+id/scoreA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="50sp" />
 
-        <Button
-            android:id="@+id/PlusThreeA"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="3 pointer"
-            android:onClick="PlusThreePointA"/>
+            <Button
+                android:id="@+id/PlusTwoA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#E65100"
+                android:onClick="PlusTwoPointA"
+                android:text="2 pointer"
+                android:textColor="#EEEEEE"
+               
+                />
 
-        <Button
-            android:id="@+id/FreeThrowA"
-            android:layout_width="fill_parent"
+            <Button
+                android:id="@+id/PlusThreeA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#E65100"
+                android:onClick="PlusThreePointA"
+                android:text="3 pointer"
+                android:textColor="#EEEEEE" />
+
+            <Button
+                android:id="@+id/FreeThrowA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E65100"
+                android:onClick="PlusOneA"
+                android:text="Free throw"
+                android:textColor="#EEEEEE" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Free throw"
-            android:onClick="PlusOneA"/>
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Team B"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/scoreB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/PlusTwoB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#E65100"
+                android:onClick="PlusTwoPointB"
+                android:text="2 pointer"
+                android:textColor="#EEEEEE" />
+
+            <Button
+                android:id="@+id/PlusThreeB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#E65100"
+                android:onClick="PlusThreePointB"
+                android:text="3 pointer"
+                android:textColor="#EEEEEE" />
+
+            <Button
+                android:id="@+id/FreeThrowB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E65100"
+                android:onClick="PlusOneB"
+                android:text="Free throw"
+                android:textColor="#EEEEEE" />
+        </LinearLayout>
+
     </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
-
-        <TextView
-            android:id="@+id/teamB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="Team B"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            />
-
-        <TextView
-            android:id="@+id/scoreB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="0"
-            android:textSize="50sp"
-            android:textAlignment="center"
-            />
-
-        <Button
-            android:id="@+id/PlusTwoB"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="2 pointer"
-            android:onClick="PlusTwoPointB"/>
-
-        <Button
-            android:id="@+id/PlusThreeB"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="3 pointer"
-            android:onClick="PlusThreePointB"/>
-
-        <Button
-            android:id="@+id/FreeThrowB"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Free throw"
-            android:onClick="PlusOneB"/>
-    </LinearLayout>
-
-   </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="reset"
-        android:onClick="ResetScores"
         android:layout_gravity="center"
-       />
-    </LinearLayout>
+        android:background="#0277BD"
+        android:onClick="ResetScores"
+        android:text="reset"
+        android:textColor="#EEEEEE" />
+</LinearLayout>
